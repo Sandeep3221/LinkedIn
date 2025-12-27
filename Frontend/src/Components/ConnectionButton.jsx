@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import { userDataContex } from '../Contex/UserContex'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-const socket=io("http://localhost:8000")
+const socket=io("https://linkedin-backend-n0rz.onrender.com")
 function ConnectionButton({userId}) {
 let {userData,setUserData}=useContext(userDataContex)
 let {serverUrl}=useContext(authDataContex)
