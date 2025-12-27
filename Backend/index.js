@@ -9,7 +9,6 @@ import postRouter from "./routes/post.routes.js"
 import connectionRouter from "./routes/connection.routes.js"
 import http from "http"
 import { Server } from "socket.io"
-import { Socket } from "dgram"
 dotenv.config()
 let app=express()
 let server=http.createServer(app)
