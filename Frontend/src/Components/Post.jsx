@@ -10,7 +10,7 @@ import { LuSendHorizontal } from "react-icons/lu";
 import { io } from 'socket.io-client'
 import ConnectionButton from './ConnectionButton'
 
-let socket = io("http://localhost:8000")
+let socket = io("https://linkedin-backend-n0rz.onrender.com")
 
 function Post({ id, author, like, comment, description, image, createdAt }) {
 
