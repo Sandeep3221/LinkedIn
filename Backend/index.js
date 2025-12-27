@@ -36,7 +36,7 @@ io.on("connection",(socket)=>{
                 userSocketMap.set(userId,socket.id)
                 console.log(userSocketMap)
         })
-        socket.on("disconnect",(socket)=>{
+        socket.on("disconnect",()=>{
                 console.log("user disconnected",socket.id)
         })
 })
