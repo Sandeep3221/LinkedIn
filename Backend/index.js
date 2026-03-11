@@ -15,14 +15,14 @@ app.set("trust proxy", 1)
 let server=http.createServer(app)
 export const io=new Server(server,{
         cors:({
-                origin:["https://linked-in-omega-six.vercel.app", "https://linked-4bcnlrdzw-sandeep3221s-projects.vercel.app"],
+                origin:true,
                 credentials:true 
         })
 })
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-        origin:["https://linked-in-omega-six.vercel.app", "https://linked-4bcnlrdzw-sandeep3221s-projects.vercel.app"],
+        origin:true,
         credentials:true
 }))
 let port=process.env.PORT || 5000
