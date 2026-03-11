@@ -11,17 +11,18 @@ import http from "http"
 import { Server } from "socket.io"
 dotenv.config()
 let app=express()
+app.set("trust proxy", 1)
 let server=http.createServer(app)
 export const io=new Server(server,{
         cors:({
-                origin:"https://linked-in-omega-six.vercel.app",
+                origin:["https://linked-in-omega-six.vercel.app", "https://linked-4bcnlrdzw-sandeep3221s-projects.vercel.app"],
                 credentials:true 
         })
 })
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-        origin:"https://linked-in-omega-six.vercel.app",
+        origin:["https://linked-in-omega-six.vercel.app", "https://linked-4bcnlrdzw-sandeep3221s-projects.vercel.app"],
         credentials:true
 }))
 let port=process.env.PORT || 5000
