@@ -3,7 +3,7 @@ import { createContext } from 'react'
 
 export const authDataContex=createContext()
 
-const serverUrl="https://linkedin-backend-n0rz.onrender.com"
+const serverUrl="https://linkedin-backend-n0rz.onrender.com/"
 let value={
         serverUrl
 }
